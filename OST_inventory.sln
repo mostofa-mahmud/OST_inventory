@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OST_inventory", "OST_inventory.csproj", "{6FBEED0A-7AB4-4D48-AA38-E4D3C0E5E01A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FBEED0A-7AB4-4D48-AA38-E4D3C0E5E01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBEED0A-7AB4-4D48-AA38-E4D3C0E5E01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBEED0A-7AB4-4D48-AA38-E4D3C0E5E01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBEED0A-7AB4-4D48-AA38-E4D3C0E5E01A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB5F4A58-2DBB-402D-9102-51CA487DC207}
+	EndGlobalSection
+EndGlobal
