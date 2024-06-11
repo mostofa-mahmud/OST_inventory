@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+@model OST_inventory.Models.Account
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+    
+        @using (Html.BeginForm("Login", "Auth", FormMethod.Post)) 
+        {
+            <div class="row" style="width: 400px; height: 300px; background: antiquewhite; position: fixed; margin: auto; left: 0px; right: 0px; top: 0px; bottom: 0px ">
+                
+                <div class="col-12" >
+                    <label for="basic-url">User Name</label>
+                    <div class="input-group mb-3">
+                        @Html.TextAreaFor(model => model.UserName, new {@class="form-control", id="txtUserName" })
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="basic-url">Password</label>
+                    <div class="input-group mb-3">
+                        @Html.TextAreaFor(model => model.Password, new { @class = "form-control", id = "txtPass" })
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        }
+
+    </div>
+</body>
+</html>

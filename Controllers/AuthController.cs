@@ -6,9 +6,10 @@ using System.Web.Mvc;
 
 namespace OST_inventory.Controllers
 {
-    public class HomeController : Controller
+    public class AuthController : Controller
     {
-        public ActionResult DashBoard()
+        // GET: Auth
+        public ActionResult Login()
         {
             return View();
         }
