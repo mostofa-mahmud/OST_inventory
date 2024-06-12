@@ -18,20 +18,33 @@
     
         @using (Html.BeginForm("Login", "Auth", FormMethod.Post)) 
         {
-            <div class="row" style="width: 400px; height: 300px; background: antiquewhite; position: fixed; margin: auto; left: 0px; right: 0px; top: 0px; bottom: 0px ">
+            <div class="row" style="width: 400px; height: 350px; background: antiquewhite; position: fixed; margin: auto;
+left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 20px; border-radius: 10px ">
                 
-                <div class="col-12" >
-                    <label for="basic-url">User Name</label>
-                    <div class="input-group mb-3">
-                        @Html.TextAreaFor(model => model.UserName, new {@class="form-control", id="txtUserName" })
+                <center>
+                    <h2>Login</h2>
+                    <label for="basic-url" style=" float: left" >User Name</label>
+                    <div class="input-group mb-3" style="">
+                        @Html.TextAreaFor(model => model.UserName, new { @class = "form-control", id = "txtUserName", Style = "width: 100%; max-width: 100%; height: 10px" })
                     </div>
-                </div>
-                <div class="col-12">
-                    <label for="basic-url">Password</label>
+                    <label for="basic-url" style=" float: left" >Password</label>
                     <div class="input-group mb-3">
-                        @Html.TextAreaFor(model => model.Password, new { @class = "form-control", id = "txtPass" })
+                        @Html.TextAreaFor(model => model.Password, new { @class = "form-control", id = "txtPass", Style = "width: 100%; max-width: 100%;  height: 10px" })
                     </div>
+
+                    <br />
+
+                    <input type="submit" class="btn btn-dark" value="login" style=" width: 100%; max-width: 100%" />
+
+                </center>
+
+
+                @*@<div class="col col-12" >
+                    
                 </div>
+                <div class="col col-12">
+                    
+                </div>*@
 
             </div>
             
